@@ -1,0 +1,17 @@
+src/
+tests/
+dist-test/
+sample.json
+
+tsconfig.json
+tsconfig.test.json
+
+.git/
+.gitignore
+
+*.test.ts
+*.test.js
+*.test.d.ts
+*.map
+
+npm-debug.log*

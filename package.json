@@ -1,0 +1,28 @@
+{
+  "name": "@_ben/ctxopt",
+  "version": "0.1.0",
+  "description": "Analyze and optimize structured data for LLM contexts",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc -p tsconfig.test.json && node dist-test/tests/analyzer.test.js"
+  },
+  "bin": {
+    "ctxopt": "./dist/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@toon-format/toon": "^4.1.1"
+  }
+}
